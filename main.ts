@@ -124,7 +124,6 @@ function Main(): void {
             case "import":
                 let contactFile:string = fs.readFileSync(args.commandPath).toString();
                 let generatedContacts:Contact[] = vcfToContacts(contactFile);
-                console.log(generatedContacts);
 
                 for(let i = 0; i < generatedContacts.length; i++) {
                     let thisContact:Contact = generatedContacts[i];
