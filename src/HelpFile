@@ -1,0 +1,13 @@
+Contacts - a CLI tool for managing Contacts
+
+Usage: contacts <command> <args>
+
+Commands:
+    search <term>             searches all contacts and returns ones that match your query
+    export <file.vcf>         path to export contacts to (.vcf file)
+    import <file.vcf>         path to import contacts from
+    list                      lists all contacts
+
+Arguments:
+    --help                      shows this message
+    --db <path to db>           path to database directory (default is HOME/.contactsdir)
